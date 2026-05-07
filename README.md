@@ -10,8 +10,8 @@
 ---
 
 ## ⌛ Status do Projeto
-> **Fase Atual:** Etapa 1 - Revisão Bibliográfica e Planejamento da Intervenção.
-> *Próxima Fase: Coleta de dados (Baseline) prevista para Abril/2026.*
+> **Fase Atual:** Etapa 2 Concluída - Coleta de Baseline e Análise Exploratória de Dados (EDA).
+> *Próxima Fase: Intervenção Educativa (Aula/GD) e coleta de dados Pós-Intervenção (Maio/2026).*
 
 ---
 
@@ -25,13 +25,14 @@ Estudos recentes apontam que enfermeiros apresentam baixa confiança na interpre
 
 > *Fonte: Análise bibliográfica de 17 artigos científicos ([ver pasta /docs](./docs)).*
 
-## 🛠️ Tech Stack (Planejamento)
-Este projeto foi desenhado para utilizar uma abordagem orientada a dados (*data-driven*). As seguintes ferramentas serão implementadas nas próximas etapas:
+## 🛠️ Tech Stack e Ferramentas
+Este projeto utiliza uma abordagem estrita de *data-driven*, saindo das planilhas convencionais para programação estatística orientada a dados:
 
-* **Coleta de Dados:** Google Forms (Questionários estruturados para Módulo 1 e 3 da disciplina de genética para o curso de Enfermagem da Universidade Federal de Minas Gerais).
-* **Processamento Inicial:** Excel (Estruturação de base de dados e limpeza).
-* **Futuras Implementações:** Python (Bibliotecas Pandas/Matplotlib) para análise estatística avançada, automação de gráficos e cálculo de variação de aprendizado (Delta) após a coleta dos dados.
-
+* **Coleta de Dados:** Google Forms (Questionários estruturados com escala Likert).
+* **Linguagem Principal:** `R`
+* **Limpeza e Manipulação de Dados:** `dplyr` / `tidyr` (Pacote `tidyverse` para renomeação de variáveis e pivotagem de dados).
+* **Visualização de Dados:** `ggplot2` (Geração de gráficos de barras estáticos com foco em *storytelling* em saúde).
+  
 ## 📕 Metodologia
 O projeto segue uma abordagem de análise de dados educacionais, composta pelas etapas a seguir:
 
@@ -42,9 +43,10 @@ O projeto segue uma abordagem de análise de dados educacionais, composta pelas 
 5.  **Análise de Impacto:** Comparação dos dados pré e pós-intervenção, utilizando análise de dados e estatística descritiva para avaliar mudanças no conhecimento e na percepção dos estudantes sobre conhecimentos essenciais para a medicina de precisão.
 
 ## 🧱 Estrutura do Projeto
-* [`/docs`](./docs): (Em andamento) Revisão bibliográfica, recortes de artigos e materiais adicionais.
-* `/data`: (Em breve) Dados anonimizados dos questionários aplicados.
-* `/notebooks`: (Em breve) Análises de dados, visualizações e comparações pré/pós-intervenção.
+* [`/docs`](./docs): Revisão bibliográfica, recortes de artigos e planejamento da intervenção.
+* `/data`: Base de dados em `.csv` (Baseline coletado em 07/05/2026).
+* `/scripts`: Códigos em R (`script_pre_intervencao.R`) contendo todo o pipeline de ETL e geração de gráficos.
+* `/plots`: Gráficos exportados em alta resolução (.png) analisando os mitos do senso comum na enfermagem.
 
 ---
 *Projeto de Extensão - UFMG 2025/26*
