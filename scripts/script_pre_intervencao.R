@@ -1,5 +1,5 @@
-#1. Coletando os dados do formulário:
-dadospre_sujos <- read.csv("C:/Users/conta/OneDrive/Área de Trabalho/DADOS - PROJETO DE EXTENSÃO/dadospre.csv")
+# 1. Coletando os dados do formulário (Usando caminho relativo para portabilidade):
+dadospre_sujos <- read.csv("data/dadospre.csv")
 
 #2. Renomeando colunas:
 dadospre <- dadospre_sujos %>% 
