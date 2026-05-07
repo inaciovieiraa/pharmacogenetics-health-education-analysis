@@ -2,48 +2,55 @@
 ![UFMG](https://img.shields.io/badge/INSTITUTION-UFMG-B20000?style=for-the-badge&logo=school)
 ![Focus](https://img.shields.io/badge/FOCUS-PHARMACOGENETICS-blue?style=for-the-badge&logo=dna)
 ![Status](https://img.shields.io/badge/STATUS-IN_PROGRESS-yellow?style=for-the-badge)
-> **Data-driven analysis of pharmacogenetics education impact.**
+
+> **Data-driven analysis of pharmacogenetics education impact among Nursing students at the Federal University of Minas Gerais (UFMG).**
 
 🇧🇷 *[Leia isso em Português](README.md)*
 
 ---
 
 ## ⌛ Project Status
-> **Current Phase:** Stage 1 - Literature Review and Intervention Planning.
-> *Next Phase: Data Collection (Baseline) scheduled for April 2026.*
+> **Current Phase:** Stage 2 Completed - Baseline Data Collection and Exploratory Data Analysis (EDA).
+> *Next Phase: Educational Intervention (Discussion Group) and Post-Intervention data collection (May 2026).*
 
 ---
 
-This project aims to assess Nursing students' knowledge regarding pharmacogenetics and measure the impact of an educational intervention based on clinical data.
+This project aims to assess the knowledge of Nursing students regarding pharmacogenetics and measure the impact of a data-driven clinical educational intervention.
 
 ## 📌 Objective
-To identify and analyze, through data, gaps in academic training regarding genetics and pharmacogenetics, and to evaluate whether an educational intervention improves students' understanding and perception of the clinical application of this knowledge.
+To identify and analyze data-driven gaps in academic training concerning genetics and pharmacogenetics, evaluating whether an educational intervention improves students' understanding and perception of the clinical application of this knowledge.
 
-## ⚠️ The Problem (Based on Scientific Literature)
-Recent studies indicate that nurses demonstrate low confidence in interpreting genetic tests and applying pharmacogenetics in clinical practice. Traditional academic training still offers little preparation for this knowledge, which is essential for precision medicine, potentially impacting patient safety and clinical decision-making.
+## ⚠️ The Problem (Evidence-Based)
+Recent studies indicate that nurses often show low confidence in interpreting genetic tests and applying pharmacogenetics in clinical practice. Traditional academic training still offers limited preparation for these essential components of precision medicine, which can impact patient safety and clinical decision-making.
 
-> *Source: Bibliographic analysis of 17 scientific articles ([see /docs folder](./docs)).*
+> *Source: Literature review of 17 scientific articles ([see /docs folder](./docs)).*
 
-## 🛠️ Tech Stack (Planned)
-This project was designed to use a data-driven approach. The following tools will be implemented in the next stages:
+## 🛠️ Tech Stack & Tools
+This project follows a strict data-driven approach, moving beyond conventional spreadsheets to data-oriented statistical programming:
 
-* **Data Collection:** Google Forms (Structured questionnaires for Module 1 and 3 of the Genetics course for Nursing students at the Federal University of Minas Gerais - UFMG).
-* **Initial Processing:** Excel (Database structuring and cleaning).
-* **Future Implementations:** Python (Pandas/Matplotlib libraries) for advanced statistical analysis, chart automation, and learning variation (Delta) calculation after data collection.
-
+* **Data Collection:** Google Forms (Structured questionnaires using Likert scales).
+* **Primary Language:** `R`
+* **Data Cleaning & Manipulation:** `dplyr` / `tidyr` (`tidyverse` package for variable renaming and data pivoting).
+* **Data Visualization:** `ggplot2` (Static bar charts focused on healthcare storytelling).
+  
 ## 📕 Methodology
 The project follows an educational data analysis approach, consisting of the following steps:
 
-1.  **Literature Review:** Literature analysis to identify competence gaps in genetics and pharmacogenetics in Nursing.
-2.  **Data Collection (Baseline):** Application of a structured questionnaire before the educational intervention (end of Module 1 of the "Fundamentals of Genetics and Evolution" course).
-3.  **Intervention:** Conducting a Discussion Group (DG) at the end of the course (Module 3), based on scientific articles, addressing pharmacogenetics knowledge, patient safety, and clinical decision-making.
-4.  **New Data Collection:** Application of a new questionnaire after the educational intervention.
-5.  **Impact Analysis:** Comparison of pre- and post-intervention data using data analysis and descriptive statistics to assess changes in students' knowledge and perception of essential precision medicine concepts.
+1.  **Literature Review:** Analysis of existing literature to identify competence gaps in genetics and pharmacogenetics within Nursing.
+2.  **Baseline Data Collection:** Application of a structured questionnaire before the educational intervention (at the end of the Genetics and Evolution module).
+3.  **Intervention:** Implementation of a Discussion Group (DG) based on scientific articles, covering pharmacogenetics, patient safety, and clinical decision-making.
+4.  **Follow-up Data Collection:** Application of a new questionnaire after the educational intervention.
+5.  **Impact Analysis:** Comparison of pre- and post-intervention data using descriptive statistics to evaluate changes in knowledge and perception regarding precision medicine essentials.
 
 ## 🧱 Project Structure
-* [`/docs`](./docs): (In progress) Literature review, article excerpts, and additional materials.
-* `/data`: (Coming soon) Anonymized data from applied questionnaires.
-* `/notebooks`: (Coming soon) Data analysis, visualizations, and pre/post-intervention comparisons.
+* [**`/docs`**](./docs): Literature review, article excerpts, and intervention planning.
+* [**`/data`**](./data): Anonymized database in `.csv` (Baseline collected on May 7, 2026).
+* [**`/scripts`**](./scripts): R code ([`script_pre_intervencao.R`](./scripts/script_pre_intervencao.R)) containing the full ETL pipeline and plot generation.
+* [**`/plots`**](./plots): High-resolution charts (.png) analyzing common healthcare myths and baseline results.
 
 ---
 *Extension Project - UFMG 2025/26*
+
+---
+
+**By Inácio Vieira** *Nursing Student at the Federal University of Minas Gerais (UFMG) | Aspiring Health Data Scientist* [LinkedIn](https://www.linkedin.com/in/inaciosantosvieira/)
