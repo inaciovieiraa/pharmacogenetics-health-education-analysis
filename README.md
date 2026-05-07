@@ -42,11 +42,11 @@ O projeto segue uma abordagem de análise de dados educacionais, composta pelas 
 4.  **Nova Coleta de Dados:** Aplicação de novo questionário depois da intervenção educativa.
 5.  **Análise de Impacto:** Comparação dos dados pré e pós-intervenção, utilizando análise de dados e estatística descritiva para avaliar mudanças no conhecimento e na percepção dos estudantes sobre conhecimentos essenciais para a medicina de precisão.
 
-## 🧱 Estrutura do Projeto
-* [`/docs`](./docs): Revisão bibliográfica, recortes de artigos e planejamento da intervenção.
-* `/data`: Base de dados em `.csv` (Baseline coletado em 07/05/2026).
-* `/scripts`: Códigos em R (`script_pre_intervencao.R`) contendo todo o pipeline de ETL e geração de gráficos.
-* `/plots`: Gráficos exportados em alta resolução (.png) analisando os mitos do senso comum na enfermagem.
+🧱 Estrutura do Projeto
+/docs: Revisão bibliográfica, recortes de artigos e planejamento da intervenção.
+/data: Base de dados anonimizada em .csv (Baseline coletado em 07/05/2026).
+/scripts: Código em R (script_pre_intervencao.R) com o pipeline de ETL e geração de gráficos.
+/plots: Gráficos exportados em alta resolução (.png) analisando os mitos do senso comum na enfermagem.
 
 ---
 *Projeto de Extensão - UFMG 2025/26*
