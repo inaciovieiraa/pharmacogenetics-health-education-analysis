@@ -3,8 +3,8 @@ library(tidyverse)
 diretorio_plots <- "plots/02_resultados_finais/"
 
 # 1. Coletando dados dos questionários Pré e Pós-Intervenção:
-dadospre_sujos <- read.csv("data/dadospre.csv")
-dadospos_sujos <- read.csv("data/dadospos.csv")
+dadospre_sujos <- read.csv("data/pre_enfermagem.csv")
+dadospos_sujos <- read.csv("data/pos_enfermagem.csv")
 
 # 2. Limpeza dos dados pré:
 dadospre <- dadospre_sujos %>% 
