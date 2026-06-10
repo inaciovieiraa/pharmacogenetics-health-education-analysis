@@ -14,7 +14,7 @@
 > *The data pipeline (ETL), comparative analysis (Pre vs. Post), and visualization exports were successfully finalized.*
 >
 > **Phase 2 (Pharmacy Class 2026/1):** In Progress ⏳
-> *The repository remains active and in a methodological expansion phase. Baseline data collection (Pre-intervention) for the Pharmacy course has already begun, aiming for a multidisciplinary cross-analysis.*
+> *Baseline data collection (Pre-intervention) and analysis completed. Awaiting the educational intervention and Discussion Group session to proceed with cross-analysis against post-intervention data.*
 
 ---
 
@@ -43,6 +43,15 @@ Data extraction and analysis after the first educational intervention revealed a
   <img src="./plots/enfermagem/pos/08_pos_caso_tpmt.png" width="45%" />
 </p>
 
+### 📊 Preliminary Results (Baseline - Phase 2: Pharmacy)
+Initial exploratory analysis suggests that conceptual knowledge of pharmacogenetics may not automatically translate into safety in clinical decision-making.
+
+* **Split in Clinical Reasoning (Allergy vs. Metabolism):** Although the class demonstrated full mastery of the theoretical concepts (100% correct answers on Q6), when faced with practical reasoning, the class was split. A significant portion remained "neutral" (3) or aligned with common sense, confusing immune responses with metabolic toxicity.
+<p>
+  <img src="./plots/farmacia/pre/q6_conceito_farmacogenetica_PRE.png" width="45%" />
+  <img src="./plots/farmacia/pre/q4_alergia_metabolismo_PRE.png" width="45%" />
+</p>
+
 ## 🛠️ Tech Stack & Tools
 This project uses data-driven statistical programming to extract insights directly from the questionnaires:
 * **Data Collection:** Google Forms (Structured questionnaires with Likert scale).
@@ -52,11 +61,11 @@ This project uses data-driven statistical programming to extract insights direct
 
 ## 📕 Methodology
 The project follows an educational data analysis approach consisting of the following steps:
-1. **Literature Review:** Literature analysis to identify competency gaps in genetics in healthcare.
+1. **Literature Review:** Analysis of scientific literature to identify knowledge gaps in genetics and pharmacogenetics among healthcare students and professionals.
 2. **Data Collection (Baseline):** Structured questionnaire before the intervention.
 3. **Educational Intervention (Theoretical Class + DG):** A lecture given by the head professor on the fundamentals of pharmacogenetics, followed by an active Discussion Group (DG). The DG focuses on the practical application of real clinical cases.
 4. **Post-Intervention Collection:** New questionnaire for answer pairing, applied after the educational intervention is 100% completed.
-5. **Impact Analysis:** Use of a unified R script to clean, cross-reference, and generate visualizations to prove the evolution of the classes' clinical reasoning.
+5. **Impact Analysis:** Use of a unified R script to clean, cross-reference, and generate visualizations to assess changes in clinical reasoning.
 
 ## 🧱 Repository Structure
 * [**`/docs`**](./docs): Literature review, article excerpts, and intervention planning.
@@ -66,8 +75,8 @@ The project follows an educational data analysis approach consisting of the foll
 
 ## 🚀 Next Steps & Scalability
 This project was designed to be sustainable, incremental, and replicable:
-1. **Multidisciplinary Expansion (In progress):** Refactoring the ETL script to integrate newly collected data from the Pharmacy course, mapping the variability in perception and evolution between different professional cores (Nursing vs. Pharmacy).
-2. **Longitudinal Analysis:** Continuous application of the pipeline to classes in upcoming semesters, allowing the evaluation of long-term educational impact and expanding the *N* of the data sample.
+1. **Completion of Phase 2 (Pharmacy):** Post-intervention questionnaire application, focusing on correcting the clinical polarity observed in the baseline.
+2. **Multidisciplinary Expansion (Phase 3):** Start the ETL pipeline for baseline data collection for the **Biomedicine** class, mapping perception variability across different professional cores (Nursing vs. Pharmacy vs. Biomedicine).
 
 ---
 *Extension Project - UFMG 2025/26*
@@ -75,4 +84,3 @@ This project was designed to be sustainable, incremental, and replicable:
 ---
 
 **By Inácio Vieira** *Nursing Student at the Federal University of Minas Gerais (UFMG) | Starting in Healthcare Data Analysis* [LinkedIn](https://www.linkedin.com/in/inaciosantosvieira/)
-**Head Professor / Advisor:** Prof. Marcelo Rizzatti Luizon [Lattes](http://lattes.cnpq.br/1264026443614775)
