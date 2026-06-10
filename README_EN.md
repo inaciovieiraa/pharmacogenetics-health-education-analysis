@@ -32,15 +32,15 @@ Recent studies point out that the gap in precision medicine teaching is not an i
 Data extraction and analysis after the first educational intervention revealed a clear breakdown of common sense myths and high retention of clinical safety protocols:
 
 * **Breaking the Package Insert Myth:** Total agreement that "strictly following the package insert avoids intoxication" dropped drastically, giving way to a **48.3%** disagreement post-intervention.
-![Mito da Bula](./plots/02_resultados_finais/01_mito_bula.png)
+![Mito da Bula](./plots/enfermagem/pos/01_mito_bula.png)
 
 * **Paradigm Shift (Allergy vs. Metabolism):** The initial view that severe reactions on the first dose are always "allergies" was reversed, with the majority of the class disagreeing with this premise after the educational intervention.
-![Alergia ou Metabolismo](./plots/02_resultados_finais/04_alergia_ou_metabolismo.png)
+![Alergia ou Metabolismo](./plots/enfermagem/pos/04_alergia_ou_metabolismo.png)
 
 * **Practical Clinical Retention:** **100%** of the students correctly identified the lethal overdose risk in the practical case of Codeine ultrarapid metabolism (CYP2D6), and **93.1%** chose the correct drastic dose reduction protocol in the TPMT case.
 <p>
-  <img src="./plots/02_resultados_finais/07_pos_caso_codeina.png" width="45%" />
-  <img src="./plots/02_resultados_finais/08_pos_caso_tpmt.png" width="45%" />
+  <img src="./plots/enfermagem/pos/07_pos_caso_codeina.png" width="45%" />
+  <img src="./plots/enfermagem/pos/08_pos_caso_tpmt.png" width="45%" />
 </p>
 
 ## 🛠️ Tech Stack & Tools
