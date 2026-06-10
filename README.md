@@ -14,7 +14,7 @@
 > *O pipeline de dados (ETL), a análise comparativa (Pré vs. Pós) e a exportação das visualizações foram finalizados com sucesso.*
 >
 > **Fase 2 (Turma de Farmácia 2026/1):** Em Andamento ⏳
-> *O repositório segue ativo e em fase de expansão metodológica. A coleta de dados da baseline (Pré-intervenção) para o curso de Farmácia já foi iniciada, visando uma análise cruzada multidisciplinar.*
+> *Coleta e análise da baseline (Pré-intervenção) concluídas. Aguardando a aplicação da aula e do Grupo de Discussão para o cruzamento de dados com a coleta pós-intervenção.*
 ---
 
 Este projeto tem o objetivo de avaliar o conhecimento de estudantes da área da saúde sobre farmacogenética e medir o impacto de intervenções educativas baseadas em dados clínicos, utilizando uma abordagem estruturada de análise de dados e estatística descritiva.
@@ -42,6 +42,15 @@ A extração e análise dos dados após a primeira intervenção educacional rev
   <img src="./plots/enfermagem/pos/08_pos_caso_tpmt.png" width="45%" />
 </p>
 
+### 📊 Resultados Preliminares (Baseline - Fase 2: Farmácia)
+A análise exploratória inicial sugere que o domínio conceitual da farmacogenética pode não se traduzir automaticamente em segurança na tomada de decisão clínica.
+
+* **A Divisão no Raciocínio Clínico (Alergia vs. Metabolismo):** Embora a turma tenha gabaritado o conceito teórico da disciplina (100% de acerto na Q6), ao serem confrontados com o raciocínio prático, a sala se rachou. Uma parcela massiva ficou no "neutro" (3) ou concordou com o senso comum, confundindo resposta imune com toxicidade metabólica.
+<p>
+  <img src="./plots/farmacia/pre/q6_conceito_farmacogenetica_PRE.png" width="45%" />
+  <img src="./plots/farmacia/pre/q4_alergia_metabolismo_PRE.png" width="45%" />
+</p>
+
 ## 🛠️ Tech Stack e Ferramentas
 Este projeto utiliza programação estatística orientada a dados para extrair insights diretamente dos questionários:
 * **Coleta de Dados:** Google Forms (Questionários estruturados com escala Likert).
@@ -51,11 +60,11 @@ Este projeto utiliza programação estatística orientada a dados para extrair i
 
 ## 📕 Metodologia
 O projeto segue uma abordagem de análise de dados educacionais composta pelas etapas a seguir:
-1. **Revisão Bibliográfica:** Análise da literatura para identificação de lacunas de competência em genética na saúde.
+1. **Revisão Bibliográfica:** Análise de literatura científica para identificação de lacunas de conhecimento em genética e farmacogenética entre estudantes e profissionais da área da saúde.
 2. **Coleta de Dados (Baseline):** Questionário estruturado antes da intervenção.
 3. **Intervenção Educativa (Aula Teórica + GD):** Realização de uma aula expositiva ministrada pelo professor titular sobre os fundamentos da farmacogenética, seguida por um Grupo de Discussão (GD) ativo. O GD é focado na aplicação prática de casos clínicos reais.
 4. **Coleta Pós-Intervenção:** Novo questionário para pareamento de respostas, aplicado após a intervenção educacional ser 100% concluída.
-5. **Análise de Impacto:** Uso de script unificado em R para limpar, cruzar e gerar visualizações com a finalidade de provar a evolução do raciocínio clínico das turmas.
+5. **Análise de Impacto:** Uso de script unificado em R para limpar, cruzar e gerar visualizações com a finalidade de avaliar mudanças no raciocínio clínico das turmas.
 
 ## 🧱 Estrutura do Repositório
 * [**`/docs`**](./docs): Revisão bibliográfica, recortes de artigos e planejamento das intervenções.
@@ -65,9 +74,8 @@ O projeto segue uma abordagem de análise de dados educacionais composta pelas e
 
 ## 🚀 Próximos Passos & Escalabilidade
 Este projeto foi desenhado para ser sustentável, incremental e replicável:
-1. **Expansão Multidisciplinar (Em andamento):** Refatoração do script de ETL para integrar os dados recém-coletados do curso de Farmácia, mapeando a variabilidade de percepção e evolução entre diferentes núcleos profissionais (Enfermagem vs. Farmácia).
-2. **Análise Longitudinal:** Aplicação contínua do pipeline para as turmas dos próximos semestres, permitindo avaliar o impacto educacional a longo prazo e expandir o *N* da amostra de dados.
-
+1. **Finalização da Fase 2 (Farmácia):** Aplicação do questionário pós-intervenção, focando na correção da polaridade clínica vista na baseline.
+2. **Expansão Multidisciplinar (Fase 3):** Iniciar o pipeline de coleta e análise da baseline para a turma de **Biomedicina**, mapeando a variabilidade de percepção entre os diferentes núcleos profissionais (Enfermagem vs. Farmácia vs. Biomedicina).
 ---
 *Projeto de Extensão - UFMG 2025/26*
 
