@@ -10,15 +10,14 @@
 ---
 
 ## ⌛ Status do Projeto
-
-### Enfermagem (2026/1) ✅
-Aplicação do questionário pré-intervenção, Grupo de Discussão (GD), coleta pós-intervenção e análise comparativa finalizadas.
-
-### Farmácia (2026/1) ⏳
-Baseline concluída. Aguardando intervenção educacional e coleta pós-intervenção.
-
-### Biomedicina (2026/1) ⏳
-Baseline concluída. Aguardando definição da estratégia educacional e coleta pós-intervenção.
+> **Enfermagem (2026/1) ✅**
+> *Aplicação do questionário pré-intervenção, Grupo de Discussão (GD), coleta pós-intervenção e análise comparativa finalizadas com sucesso.*
+>
+> **Farmácia (2026/1) ⏳**
+> *Coleta e análise da baseline (Pré-intervenção) concluídas. Aguardando aplicação da aula e coleta pós-intervenção.*
+>
+> **Biomedicina (2026/1) ⏳**
+> *Coleta e análise da baseline (Pré-intervenção) concluídas. Aguardando definição da estratégia educacional e coleta pós-intervenção.*
 ---
 
 Este projeto tem o objetivo de avaliar o conhecimento de estudantes da área da saúde sobre farmacogenética e medir o impacto de intervenções educativas baseadas em dados clínicos, utilizando uma abordagem estruturada de análise de dados e estatística descritiva.
