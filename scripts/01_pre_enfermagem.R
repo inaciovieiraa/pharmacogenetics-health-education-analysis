@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # 1. Coletando os dados do formulário (Usando caminho relativo para portabilidade):
-dadospre_sujos <- read.csv("data/dadospre.csv")
+dadospre_sujos <- read.csv("data/pre_enfermagem.csv")
 
 #2. Renomeando colunas:
 dadospre <- dadospre_sujos %>% 
