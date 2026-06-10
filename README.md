@@ -31,15 +31,15 @@ Estudos recentes apontam que a defasagem no ensino de medicina de precisão não
 A extração e análise dos dados após a primeira intervenção educacional revelaram uma quebra clara de mitos do senso comum e alta retenção de condutas clínicas de segurança:
 
 * **Quebra do Mito da Bula:** A concordância total de que "seguir rigorosamente a bula evita intoxicação" caiu drasticamente, dando lugar a uma discordância de **48.3%** no pós-intervenção.
-![Mito da Bula](./plots/02_resultados_finais/01_mito_bula.png)
+![Mito da Bula](./plots/enfermagem/pos/01_mito_bula.png)
 
 * **Mudança de Paradigma (Alergia vs. Metabolismo):** A visão inicial de que reações severas na primeira dose são sempre "alergias" foi revertida, com a maioria da turma passando a discordar dessa premissa após a intervenção educacional.
-![Alergia ou Metabolismo](./plots/02_resultados_finais/04_alergia_ou_metabolismo.png)
+![Alergia ou Metabolismo](./plots/enfermagem/pos/04_alergia_ou_metabolismo.png)
 
 * **Retenção Clínica Prática:** **100%** dos alunos identificaram corretamente o risco letal de overdose no caso prático de metabolismo ultrarrápido da Codeína (CYP2D6), e **93.1%** acertaram a conduta de redução drástica de dose no caso da TPMT.
 <p>
-  <img src="./plots/02_resultados_finais/07_pos_caso_codeina.png" width="45%" />
-  <img src="./plots/02_resultados_finais/08_pos_caso_tpmt.png" width="45%" />
+  <img src="./plots/enfermagem/pos/07_pos_caso_codeina.png" width="45%" />
+  <img src="./plots/enfermagem/pos/08_pos_caso_tpmt.png" width="45%" />
 </p>
 
 ## 🛠️ Tech Stack e Ferramentas
