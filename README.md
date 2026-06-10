@@ -1,7 +1,7 @@
 # Pharmacogenetics Health Education Analysis
 ![UFMG](https://img.shields.io/badge/INSTITUTION-UFMG-B20000?style=for-the-badge&logo=school)
 ![Focus](https://img.shields.io/badge/FOCUS-PHARMACOGENETICS-blue?style=for-the-badge&logo=dna)
-![Status](https://img.shields.io/badge/STATUS-ACTIVE_RESEARCH_PROJECT-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/STATUS-ACTIVE%20RESEARCH%20PROJECT-orange?style=for-the-badge)
 
 > **Data-driven analysis of pharmacogenetics education impact. | Projeto de análise de dados e impacto educacional em farmacogenética para estudantes da área da saúde (UFMG).**
 
@@ -91,7 +91,7 @@ O projeto segue uma abordagem de análise de dados educacionais composta pelas e
 5. Finalizar a coleta da baseline da turma de Biomedicina.
 6. Comparar os perfis educacionais entre Enfermagem, Farmácia e Biomedicina.
 
-## ▶️ Como Executar a Análise (Portabilidade Total)
+## ▶️ Como Executar a Análise
 Este projeto foi desenvolvido de forma totalmente automatizada e estruturada. Para garantir que os caminhos relativos funcionem na sua máquina sem que você precise alterar nenhuma linha de código, siga o padrão profissional de execução de projetos em R:
 
 ### 1. Baixe o Projeto Completo
@@ -122,3 +122,5 @@ O pipeline executará todo o processo de forma autônoma:
 ---
 
 **Por Inácio Vieira** *Estudante de Enfermagem na Universidade Federal de Minas Gerais (UFMG) | Iniciando em Análise de Dados em Saúde* [LinkedIn](https://www.linkedin.com/in/inaciosantosvieira/)
+**Professor Orientador:** Prof. Marcelo Rizzatti Luizon [Lattes](http://lattes.cnpq.br/1264026443614775)
+
