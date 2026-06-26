@@ -59,9 +59,9 @@ Na turma de biomedicina, a intervenção foi realizada exclusivamente através d
    ![Papel do Biomédico](./plots/biomedicina/pos/02_responsabilidade_biomedicina.png)
 
 ### 📊 Resultados Preliminares (Baseline)
-As turmas apresentaram perfis distintos antes da intervenção educacional, revelando diferenças relevantes entre domínio conceitual e aplicação prática do conhecimento.
+Atualmente, a turma de Farmácia é a única que aguarda a etapa final da pesquisa (aplicação do GD e coleta pós-intervenção). A análise exclusiva da sua linha de base revelou um contraste interessante entre o domínio teórico e a tomada de decisão prática:
 
-* **Farmácia:** Embora os estudantes dominem a teoria (100% de acerto no conceito), a turma se dividiu ao aplicar a prática clínica de Alergia vs. Metabolismo. Além disso, **65.2%** dos alunos demonstraram forte dependência do senso comum no "Mito da Bula".
+* **Farmácia:** Embora os estudantes dominem a teoria base (100% de acerto no conceito de farmacogenética), a turma se dividiu na hora de aplicar o raciocínio clínico no cenário de Alergia vs. Metabolismo. Além disso, **65.2%** dos alunos demonstraram forte dependência do senso comum no "Mito da Bula" antes de receberem qualquer intervenção.
 <p>
   <img src="./plots/farmacia/pre/q6_conceito_farmacogenetica_PRE.png" width="45%" />
   <img src="./plots/farmacia/pre/q4_alergia_metabolismo_PRE.png" width="45%" />
