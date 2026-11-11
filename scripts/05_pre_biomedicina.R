@@ -1,7 +1,12 @@
 library(tidyverse)
 
+# === PAINEL DE CONTROLE ===
+# Altere o nome do arquivo .csv abaixo para o semestre correspondente.
+arquivo_dados <- "data/pre_biomedicina.csv"
+# ==========================
+
 # 1. Coletando os dados do formulário (Usando caminho relativo para portabilidade):
-dadospre_sujos <- read.csv("data/pre_biomedicina.csv")
+dadospre_sujos <- read.csv(arquivo_dados)
 
 #2. Renomeando colunas:
 dadospre <- dadospre_sujos %>% 
@@ -15,7 +20,6 @@ dadospre <- dadospre_sujos %>%
   )
 
 #3. Preparando gráfico da questão 1:
-
 resumo_q1 <- dadospre %>%
   mutate(q1_bula = factor(q1_bula, levels = 1:5)) %>%
   count(q1_bula, .drop = FALSE) %>% 
@@ -37,7 +41,6 @@ ggplot(resumo_q1, aes(x = q1_bula, y = n)) +
             fontface = "bold")
 
 #4. Preparando gráfico da questão 2: (OBS: MUDAR ENUNCIADO DESSA QUESTÃO PARA CADA CURSO!!!!)
-
 resumo_q2 <- dadospre %>%
   mutate(q2_medico = factor(q2_medico, levels = 1:5)) %>%
   count(q2_medico, .drop = FALSE) %>% 
@@ -51,9 +54,7 @@ ggplot(resumo_q2, aes(x = q2_medico, y = n)) +
     x = "NIVEL DE CONCORDÂNCIA",
     y = "QUANTIDADE DE ALUNOS",
     title = "RESPONSABILIDADE DA BIOMEDICINA: Visão da turma antes da aula",
-    subtitle = "A investigação de riscos genéticos e a definição da terapia personalizada
-são responsabilidades exclusivas da equipe médica, cabendo ao biomédico
-apenas a execução técnica do exame e a entrega do laudo.") + 
+    subtitle = "A investigação de riscos genéticos e a definição da terapia personalizada\nsão responsabilidades exclusivas da equipe médica, cabendo ao biomédico\napenas a execução técnica do exame e a entrega do laudo.") + 
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
             hjust = 0.5,
             size = 4.3,
@@ -61,7 +62,6 @@ apenas a execução técnica do exame e a entrega do laudo.") +
             fontface = "bold")
 
 #5. Preparando gráfico da questão 3:
-
 resumo_q3 <- dadospre %>%
   mutate(q3_dna = factor(q3_dna, levels = 1:5)) %>%
   count(q3_dna, .drop = FALSE) %>% 
@@ -83,7 +83,6 @@ ggplot(resumo_q3, aes(x = q3_dna, y = n)) +
             fontface = "bold")
 
 #6. Preparando gráfico da questão 4:
-
 resumo_q4 <- dadospre %>%
   mutate(q4_alergia = factor(q4_alergia, levels = 1:5)) %>%
   count(q4_alergia, .drop = FALSE) %>% 
@@ -105,7 +104,6 @@ ggplot(resumo_q4, aes(x = q4_alergia, y = n)) +
             fontface = "bold")
 
 #7. Preparando gráfico da questão 5:
-
 resumo_q5 <- dadospre %>%
   mutate(q5_azar = factor(q5_azar, levels = 1:5)) %>%
   count(q5_azar, .drop = FALSE) %>% 
@@ -127,7 +125,6 @@ ggplot(resumo_q5, aes(x = q5_azar, y = n)) +
             fontface = "bold")
 
 #8. Preparando gráfico da questão 6 (Conceito):
-
 resumo_q6 <- dadospre %>%
   count(q6_conceito) %>% 
   mutate(porcentagem = n / sum(n) * 100)
