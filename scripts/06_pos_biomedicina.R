@@ -1,10 +1,15 @@
 library(tidyverse)
 
+# === PAINEL DE CONTROLE ===
+# Altere os nomes dos arquivos .csv e a pasta de destino dos plots para o semestre correspondente.
+arquivo_pre <- "data/pre_biomedicina.csv"
+arquivo_pos <- "data/pos_biomedicina.csv"
 diretorio_plots <- "plots/biomedicina/pos/"
+# ==========================
 
 # 1. Coletando dados dos questionários Pré e Pós-Intervenção:
-dadospre_sujos <- read.csv("data/pre_biomedicina.csv")
-dadospos_sujos <- read.csv("data/pos_biomedicina.csv")
+dadospre_sujos <- read.csv(arquivo_pre)
+dadospos_sujos <- read.csv(arquivo_pos)
 
 # 2. Limpeza dos dados pré:
 dadospre <- dadospre_sujos %>% 
@@ -49,8 +54,7 @@ ggplot(resumo_q1_comp, aes(x = as.factor(q1_bula), y = porcentagem, fill = fase)
     x = "NÍVEL DE CONCORDÂNCIA",
     y = "PORCENTAGEM DE ALUNOS (%)",
     title = "MITO DA BULA: Comparativo Pré e Pós-Intervenção",
-    subtitle = "Seguir rigorosamente a dose padrão recomendada na bula é a melhor forma
-de garantir que nenhum paciente sofra intoxicação medicamentosa.",
+    subtitle = "Seguir rigorosamente a dose padrão recomendada na bula é a melhor forma\nde garantir que nenhum paciente sofra intoxicação medicamentosa.",
     fill = "Momento"
   ) +
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
@@ -79,8 +83,7 @@ ggplot(resumo_q2_comp, aes(x = as.factor(q2_medico), y = porcentagem, fill = fas
     x = "NÍVEL DE CONCORDÂNCIA",
     y = "PORCENTAGEM DE ALUNOS (%)",
     title = "RESPONSABILIDADE DA BIOMEDICINA: Comparativo Pré e Pós",
-    subtitle = "A investigação de riscos genéticos e a definição da terapia personalizada são responsabilidades 
-exclusivas da equipe médica, cabendo ao biomédico apenas a execução técnica do exame e a entrega do laudo..",
+    subtitle = "A investigação de riscos genéticos e a definição da terapia personalizada são responsabilidades \nexclusivas da equipe médica, cabendo ao biomédico apenas a execução técnica do exame e a entrega do laudo..",
     fill = "Momento"
   ) +
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
@@ -109,8 +112,7 @@ ggplot(resumo_q3_comp, aes(x = as.factor(q3_dna), y = porcentagem, fill = fase))
     x = "NÍVEL DE CONCORDÂNCIA",
     y = "PORCENTAGEM DE ALUNOS (%)",
     title = "O VALOR DA ANAMNESE: Histórico familiar vs. Teste de DNA",
-    subtitle = "Apenas o teste de DNA laboratorial serve para identificar riscos farmacogenéticos.
-Perguntas sobre o histórico familiar do paciente ajudam pouco nesse sentido.",
+    subtitle = "Apenas o teste de DNA laboratorial serve para identificar riscos farmacogenéticos.\nPerguntas sobre o histórico familiar do paciente ajudam pouco nesse sentido.",
     fill = "Momento"
   ) +
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
@@ -139,8 +141,7 @@ ggplot(resumo_q4_comp, aes(x = as.factor(q4_alergia), y = porcentagem, fill = fa
     x = "NÍVEL DE CONCORDÂNCIA",
     y = "PORCENTAGEM DE ALUNOS (%)",
     title = "ALERGIA OU METABOLISMO? A visão da turma sobre reações iniciais",
-    subtitle = "Quando um paciente tem uma reação muito forte a um medicamento logo na primeira dose,
-quase sempre é porque ele tem alergia àquela substância",
+    subtitle = "Quando um paciente tem uma reação muito forte a um medicamento logo na primeira dose,\nquase sempre é porque ele tem alergia àquela substância",
     fill = "Momento"
   ) +
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
@@ -169,8 +170,7 @@ ggplot(resumo_q5_comp, aes(x = as.factor(q5_azar), y = porcentagem, fill = fase)
     x = "NÍVEL DE CONCORDÂNCIA",
     y = "PORCENTAGEM DE ALUNOS (%)",
     title = "AZAR OU GENÉTICA? A visão da turma sobre intoxicações severas",
-    subtitle = "Reações adversas graves a medicamentos (como uma intoxicação severa) são quase
-sempre eventos imprevisíveis e inevitáveis, uma questão de azar do paciente.",
+    subtitle = "Reações adversas graves a medicamentos (como uma intoxicação severa) são quase\nsempre eventos imprevisíveis e inevitáveis, uma questão de azar do paciente.",
     fill = "Momento"
   ) +
   geom_text(aes(label = paste0(round(porcentagem, 1), "%")),
@@ -210,4 +210,3 @@ ggplot(resumo_q6_comp, aes(x = as.factor(q6_conceito), y = porcentagem, fill = f
   scale_y_continuous(expand = expansion(mult = c(0, 0.15)))
 
 ggsave(paste0(diretorio_plots, "06_escopo_estudo.png"), width = 9, height = 6, dpi = 300)
-
