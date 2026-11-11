@@ -9,15 +9,21 @@
 
 ---
 
-## ⌛ Status do Projeto
-> **Enfermagem (2026/1) ✅**
+## ⌛ Status do Projeto & Ciclos Analíticos
+
+### Ciclo 2026/2 (Em Andamento)
+> **Enfermagem 2026/2 ⏳**
+> *Coleta pré-intervenção, Grupo de Discussão (GD) e coleta pós-intervenção concluídas. Dados em fase de tratamento e análise (ETL pendente).*
+>
+> **Farmácia 2026/2 ⏳**
+> *Coleta de linha de base (pré-intervenção) finalizada. Aguardando intervenção completa (Aula + GD) e coleta pós-intervenção para gerar a análise comparativa final.*
+
+### Ciclo 2026/1 (Concluído)
+> **Enfermagem 2026/1 ✅**
 > *Aplicação do questionário pré-intervenção, Grupo de Discussão (GD), coleta pós-intervenção e análise comparativa finalizadas com sucesso.*
 >
-> **Biomedicina (2026/1) ✅**
+> **Biomedicina 2026/1 ✅**
 > *Coleta pré e pós-intervenção concluídas. Intervenção realizada apenas com Aula Teórica Expositiva (sem GD), atuando como grupo controle metodológico para as demais turmas.*
->
-> **Farmácia (2026/1) 🔍**
-> *Coleta e análise de linha de base (Diagnóstico) concluídas. Os dados comprovaram a necessidade da intervenção, e a aplicação completa (Aula + GD) com nova turma foi programada para o ciclo 2026/2.*
 
 ---
 
@@ -27,11 +33,11 @@ Este projeto tem o objetivo de avaliar o conhecimento de estudantes da área da 
 Identificar e analisar, por meio de dados, lacunas na formação acadêmica sobre genética e farmacogenética, avaliando quantitativamente se uma intervenção educacional melhora o entendimento dos estudantes sobre a segurança do paciente e a tomada de decisão clínica.
 
 ## ⚠️ O Problema (Baseado na Literatura Científica)
-Estudos recentes apontam que a defasagem no ensino de medicina de precisão não é um problema isolado, mas uma falha sistêmica na formação de toda a equipe multidisciplinar de saúde. Enfermeiros, farmacêuticos e outros profissionais apresentam baixa confiança na interpretação de testes genéticos e na aplicação da farmacogenética na prática. A formação acadêmica tradicional ainda oferece pouca preparação para lidar com essas informações, o que impacta diretamente a prevenção de reações adversas e a segurança do paciente.
+Estudos recentes apontam que a defasagem no ensino de medicina de precisão não é um problema isolado, mas uma falha sistêmica na formação de toda a equipe multidisciplinar de saúde. Profissionais apresentam baixa confiança na interpretação de testes genéticos e na aplicação da farmacogenética na prática. A formação acadêmica tradicional ainda oferece pouca preparação para lidar com essas informações, o que impacta diretamente a prevenção de reações adversas e a segurança do paciente.
 
-> *Fonte: Análise bibliográfica de 17 artigos científicos ([ver pasta /docs](./docs)).*
+> *Fonte: Análise bibliográfica estruturada de 17 artigos científicos ([ver pasta /docs](./docs)).*
 
-## 🏆 Principais Resultados (Data Insights - Fase 1: Enfermagem)
+## 🏆 Principais Resultados (Data Insights - Enfermagem 2026/1)
 A extração e análise dos dados após a intervenção educacional completa (Aula + GD) revelaram uma quebra clara de mitos do senso comum e alta retenção de condutas clínicas de segurança:
 
 * **Quebra do Mito da Bula:** A concordância total de que "seguir rigorosamente a bula evita intoxicação" caiu drasticamente, dando lugar a uma discordância de **48.3%** no pós-intervenção.
@@ -46,8 +52,8 @@ A extração e análise dos dados após a intervenção educacional completa (Au
   <img src="./plots/enfermagem/pos/08_pos_caso_tpmt.png" width="45%" />
 </p>
 
-## 🏆 Principais Resultados (Data Insights - Fase 2: Biomedicina)
-Na turma de biomedicina, a intervenção foi realizada exclusivamente através de uma **Aula Teórica** sobre farmacogenética, sem a aplicação do Grupo de Discussão (GD) prático. Os dados demonstraram que a base expositiva isolada já possui um impacto estatístico brutal na correção de erros conceituais:
+## 🏆 Principais Resultados (Data Insights - Biomedicina 2026/1)
+Na turma de biomedicina, a intervenção foi realizada exclusivamente através de uma **Aula Teórica** sobre farmacogenética, sem a aplicação do Grupo de Discussão (GD) prático. Os dados demonstraram que a base expositiva isolada já possui um impacto estatístico significativo na correção de erros conceituais (Grupo Controle):
 
 * **O Fim do "Muro da Prudência":** Na baseline, **38.9%** da turma de Biomedicina optou pelo nível "Neutro" quando questionada se intoxicações seriam sempre alergias. Após a aula teórica, a indecisão despencou para **0%**, com a grande maioria (**70.6%**) assumindo a discordância total.
  ![Alergia ou Metabolismo](./plots/biomedicina/pos/04_alergia_ou_metabolismo.png)
@@ -58,29 +64,20 @@ Na turma de biomedicina, a intervenção foi realizada exclusivamente através d
 * **Empoderamento Profissional:** A discordância total de que os riscos genéticos são de responsabilidade "exclusiva da equipe médica" saltou de **72.2%** para **94.1%**, consolidando a compreensão do biomédico sobre a importância da sua responsabilidade técnica nos laudos.
    ![Papel do Biomédico](./plots/biomedicina/pos/02_responsabilidade_biomedicina.png)
 
-### 📊 Diagnóstico e Linha de Base (Farmácia)
-A análise inicial da turma de Farmácia funcionou como um diagnóstico importante para o nosso projeto. Os dados mostraram um ponto curioso: embora os estudantes demonstrem alto domínio da teoria base (100% de acerto no conceito de farmacogenética), a turma ainda fica dividida na hora de aplicar esse raciocínio no cenário de "Alergia vs. Metabolismo".
-
-Além disso, **65.2%** dos alunos demonstraram depender bastante do senso comum na questão do "Mito da Bula" antes de receberem qualquer intervenção. Esse resultado prova na prática a necessidade de expandir as aulas e os grupos de discussão para os futuros farmacêuticos nos próximos semestres.
-<p>
-  <img src="./plots/farmacia/pre/q6_conceito_farmacogenetica_PRE.png" width="45%" />
-  <img src="./plots/farmacia/pre/q4_alergia_metabolismo_PRE.png" width="45%" />
-</p>
-
 ## 🛠️ Tech Stack e Ferramentas
-Este projeto utiliza programação estatística orientada a dados para extrair insights diretamente dos questionários:
-* **Coleta de Dados:** Google Forms (Questionários estruturados com escala Likert).
+Este projeto utiliza programação estatística orientada a dados para extrair insights diretamente das bases de respostas:
+* **Coleta de Dados:** Google Forms (Questionários estruturados em escala Likert).
 * **Linguagem Principal:** `R`
-* **Limpeza e Manipulação de Dados:** `dplyr` / `tidyr` (Pacote `tidyverse` para união de bases, renomeação de variáveis e fatoração).
-* **Visualização de Dados:** `ggplot2` (Geração de gráficos comparativos estáticos com foco em *storytelling* em saúde e exportação automatizada via `ggsave` em 300 DPI).
+* **Limpeza e Manipulação (ETL):** `dplyr` / `tidyr` (Pacote `tidyverse` para união de bases, renomeação de variáveis e fatoração).
+* **Visualização de Dados:** `ggplot2` (Geração de gráficos comparativos com foco em *storytelling* em saúde e exportação automatizada).
 
-## 📕 Metodologia
-O projeto segue uma abordagem de análise de dados educacionais composta pelas etapas a seguir:
-1. **Revisão Bibliográfica:** Análise de literatura científica para identificação de lacunas de conhecimento em genética e farmacogenética entre estudantes e profissionais da área da saúde.
-2. **Coleta de Dados (Baseline):** Questionário estruturado antes da intervenção para mapear o conhecimento prévio dos alunos.
-3. **Intervenção Educativa (Aula Teórica + GD):** Realização de uma aula expositiva ministrada pelo professor titular sobre os fundamentos da farmacogenética. Na turma de Enfermagem, a aula é seguida por um Grupo de Discussão (GD) focado na aplicação de casos clínicos reais. A turma de Biomedicina recebeu apenas a aula teórica (grupo controle) e a Farmácia participou da etapa inicial de diagnóstico da pesquisa.
-4. **Coleta Pós-Intervenção:** Novo questionário para pareamento de respostas, aplicado após a intervenção educacional ser concluída.
-5. **Análise de Impacto:** Uso de script unificado em R para limpar, cruzar e gerar visualizações com a finalidade de avaliar mudanças no raciocínio clínico das turmas.
+## 📕 Metodologia do Pipeline de Intervenção
+1. **Revisão Bibliográfica:** Análise de literatura para identificação de lacunas genéticas.
+2. **Coleta de Baseline (Pré):** Questionário estruturado antes da intervenção.
+3. **Intervenção Educativa:** Aula expositiva abordando fundamentos de farmacogenética.
+4. **Aplicação Prática (GD):** Sessões de Grupos de Discussão voltadas a casos clínicos (aplicado em Enfermagem e programado para Farmácia; omitido em Biomedicina como grupo controle de método).
+5. **Coleta de Validação (Pós):** Novo questionário para pareamento e medição de impacto.
+6. **Análise Estatística em R:** Scripts para limpar (ETL), cruzar dados e modelar visualizações comparativas das turmas.
 
 ## 🧱 Estrutura do Repositório
 * [**`/docs`**](./docs): Revisão bibliográfica, recortes de artigos e planejamento das intervenções.
@@ -88,42 +85,18 @@ O projeto segue uma abordagem de análise de dados educacionais composta pelas e
 * [**`/scripts`**](./scripts): Código completo em `R` contendo o pipeline unificado de ETL e geração de gráficos.
 * [**`/plots`**](./plots): Gráficos exportados em alta resolução, organizados pelas fases da pesquisa.
 
-## 🚀 Próximas Etapas
+## ▶️ Reprodutibilidade e Execução
+Este projeto foi desenhado utilizando boas práticas de *pathing* relativo no RStudio. Para rodar o pipeline analítico localmente:
 
-1. Ajustar e aprimorar o questionário com base nos aprendizados e desafios deste primeiro ciclo.
-2. Aplicar a intervenção educacional completa (Aula Teórica + GD) com uma nova turma de Farmácia.
-3. Rodar o script no R para analisar os dados pré e pós da Farmácia, comparando a evolução da turma.
-4. Cruzar os resultados dos três cursos para entender como o Grupo de Discussão impacta o aprendizado em comparação com a aula teórica isolada.
-5. Coletar dados das novas turmas de Enfermagem e Biomedicina, utilizando o mesmo método de intervenção.
+1. Realize o clone ou o download (ZIP) da estrutura completa do repositório para garantir que a hierarquia das subpastas fique preservada.
+2. Abra o RStudio via `File > New Project > Existing Directory` na raiz da pasta descompactada.
+3. Abra qualquer script contido na pasta `/scripts` (ex: `01_analise_enfermagem_2026_1.R`).
+4. Execute o código (`Ctrl + A` e `Run`). O pipeline R irá acessar autonomamente os arquivos na pasta `/data`, realizar todo o tratamento estatístico e salvar os novos gráficos diretamente na pasta `/plots`.
 
-## ▶️ Como Executar a Análise (Portabilidade Total)
-Este projeto foi desenvolvido de forma totalmente automatizada e estruturada. Para garantir que os caminhos relativos funcionem na sua máquina sem que você precise alterar nenhuma linha de código, siga o padrão profissional de execução de projetos em R:
+> **Escalabilidade Analítica:** O código foi projetado de forma modular. Para analisar um novo semestre, basta adicionar a nova base `.csv` correspondente em `/data` e adaptar as variáveis de entrada no script, preservando toda a lógica do tratamento.
 
-### 1. Baixe o Projeto Completo
-Em vez de baixar os arquivos soltos, baixe a estrutura completa do repositório para manter o pipeline intacto:
-* Clique no botão verde **Code** no topo desta página e selecione **Download ZIP** (depois descompacte a pasta no seu computador).
-
-### 2. Abra o Projeto no RStudio
-Abra o seu RStudio. No menu superior, vá em File > New Project > Existing Directory.
-Clique em Browse, navegue até a pasta do projeto que você baixou/descompactar e clique em Create Project.
-
-### 3. Execute o Script de Forma Automatizada
-Na aba de arquivos do RStudio, abra a pasta /scripts e selecione o arquivo correspondente ao curso que deseja analisar (ex: 05_pre_biomedicina.R).
-Certifique-se de que a respectiva base de dados .csv esteja dentro da pasta /data.
-
-Pressione Ctrl + A para selecionar todo o código e clique em Run (ou use o atalho Ctrl + Enter).
-O pipeline executará todo o processo de forma autônoma:
-
-- Importação e limpeza dos dados brutos (ETL);
-- Padronização das variáveis e fatoração das escalas Likert;
-- Exportação automatizada dos gráficos via `ggsave()`.
-
-### Notas de Reprodutibilidade e Escalabilidade
-- Estrutura Equivalente: Os scripts possuem rigorosamente a mesma lógica estatística, alterando apenas os títulos e enunciados específicos adaptados para as competências de cada categoria profissional.
-- Sem Alteração de Código: Caso novas turmas ou dados sejam adicionados ao projeto, você não precisa modificar a lógica do código. Basta substituir o arquivo antigo na pasta /data por um novo arquivo .csv de mesmo nome e rodar o script novamente. Todo o restante do pipeline permanecerá inalterado.
-  
 ---
-*Projeto de Extensão - UFMG 2025/26*
+*Projeto de Extensão em Farmacogenética - Universidade Federal de Minas Gerais (UFMG)*
 
 ---
 
